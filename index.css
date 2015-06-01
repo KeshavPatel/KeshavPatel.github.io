@@ -6,6 +6,10 @@ body
 {
     background-color: #0ca8e8;
 }
+body:hover
+{
+    background-color: #0ca8e8;
+}
 .box
 {
     width: 150px;
@@ -15,10 +19,10 @@ body
     margin-top: 20px;
     margin-left: 25vw;
     margin-right: 75vw;
-    -webkit-transition: background-color 2s ease-out;
-    -moz-transition: background-color 2s ease-out;
-    -o-transition: background-color 2s ease-out;
-    transition: background-color 2s ease-out;
+    -webkit-transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    transition: background-color .5s ease-out;
 }
 
 .box:hover 

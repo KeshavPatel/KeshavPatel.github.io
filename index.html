@@ -10,21 +10,35 @@
         <h1>
             KESHAV
         </h1>
-        <canvas onmouseover="draw('red')" id="myCanvas" width="150" height="150">
-            Your browser does not support the HTML5 canvas tag.
-        </canvas>
-        <script>
-            function draw(clr) 
-            {
-                var canvas = document.getElementById('myCanvas');
-                var ctx = canvas.getContext('2d');
-                ctx.beginPath();
-                ctx.fillstyle=clr;
-                ctx.arc(100, 75, 50, 0, 2 * Math.PI);
-                ctx.fill();
-            }
-            draw("yellow");
-}
-        </script> 
+            <canvas width="150" height="150" id="cav1" onmouseover="draw('#0ce8b0');" onmouseout="draw('#0ca8e8');" style="cursor:pointer;">
+            </canvas>
+            <p id="no_cav" style="display:none;">
+                You need a Canvas-compatible browser to view canvas area.
+            </p>
+            <script type="text/javascript"><!--
+                function draw(clr) 
+                {
+                    var canvas = document.getElementById('cav1');
+                    if (canvas.getContext) 
+                    {
+                        var ctx = canvas.getContext('2d');
+                        ctx.clearRect(0, 0, 150, 150);
+                        ctx.fillStyle = clr;
+                        ctx.lineWidth = .1;
+                        ctx.arc(75,75,50,0,Math.PI*2,true);
+                        ctx.fill();
+                        ctx.stroke();
+                        ctx.fillStyle = "#FFFFFF";
+                        ctx.font = '30px sans-serif';
+                        ctx.fillText("me", 55, 82);
+                    }
+                    else 
+                    {
+                        // make the element with the no-canvas message visible
+                        document.getElementById('no_cav').style.display = 'block';
+                    }
+                }
+                draw('#0ca8e8');        // calls the function
+            --></script>
     </body>
 </html>

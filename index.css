@@ -6,3 +6,23 @@ body
 {
     background-color: #0ca8e8;
 }
+.box
+{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    background: #00f9ff;
+    margin-top: 20px;
+    margin-left: 25vw;
+    margin-right: 75vw;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+}
+
+.box:hover 
+{
+    background-color: #0dff7c;
+    cursor: pointer;
+}

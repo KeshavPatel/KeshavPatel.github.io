@@ -5,14 +5,6 @@
         <title>
             Keshav B. Patel
         </title>
-        <script>
-            var c = document.getElementByTagName("canvas");
-            var ctx = c.getContext("2d");
-            ctx.beginPath();
-            ctx.arc(100, 75, 50, 0, 2 * Math.PI);
-            ctx.filltext("me", 20, 20);
-            ctx.stroke();
-        </script> 
     </head>
     <body>
         <h1>
@@ -21,5 +13,13 @@
             <canvas id="myCanvas" width="150" height="150">
                 Your browser does not support the HTML5 canvas tag.
             </canvas>
+        <script>
+            var c = document.getElementByTagName("canvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+            ctx.filltext("me", 20, 20);
+            ctx.stroke();
+        </script> 
     </body>
 </html>

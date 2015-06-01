@@ -1,32 +1,95 @@
 h1
 {
     color: white;
+    text-align: center;
 }
 body
 {
-    background-color: #0ca8e8;
+    background-color: #60b6e8;
 }
-body:hover
+#me
 {
-    background-color: #0ca8e8;
-}
-.box
-{
-    width: 150px;
-    height: 150px;
+    color: white;
+    width: 50vw;
+    height: 40vh;
     text-align: center;
-    background: #00f9ff;
     margin-top: 20px;
-    margin-left: 25vw;
-    margin-right: 75vw;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
     -webkit-transition: background-color .5s ease-out;
     -moz-transition: background-color .5s ease-out;
     -o-transition: background-color .5s ease-out;
     transition: background-color .5s ease-out;
 }
 
-.box:hover 
+#resume
 {
-    background-color: #0dff7c;
+    color: white;
+    width: 50vw;
+    height: 40vh;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 50vw;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    -webkit-transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    transition: background-color .5s ease-out;
+}
+
+#another
+{
+    color: white;
+    width: 50vw;
+    height: 40vh;
+    text-align: center;
+    margin-top: 20px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    -webkit-transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    transition: background-color .5s ease-out;
+}
+
+#yup
+{
+    color: white;
+    width: 50vw;
+    height: 40vh;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 50vw;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    -webkit-transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    transition: background-color .5s ease-out;
+}
+
+#another:hover 
+{
+    background-color: #69a0ff;
+    cursor: pointer;
+}
+#yup:hover 
+{
+    background-color: #60e8d1;
+    cursor: pointer;
+}
+#resume:hover 
+{
+    background-color: #76f0ff;
+    cursor: pointer;
+}
+#me:hover 
+{
+    background-color: #69ffbb;
     cursor: pointer;
 }

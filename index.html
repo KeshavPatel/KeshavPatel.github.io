@@ -10,16 +10,21 @@
         <h1>
             KESHAV
         </h1>
-        <canvas id="myCanvas" width="150" height="150">
+        <canvas onmouseover="draw('red')" id="myCanvas" width="150" height="150">
             Your browser does not support the HTML5 canvas tag.
         </canvas>
         <script>
-            var c = document.getElementById("myCanvas");
-            var ctx = c.getContext("2d");
-            ctx.beginPath();
-            ctx.arc(100, 75, 50, 0, 2 * Math.PI);
-            ctx.stroke();
-            ctx.text="me";
+            function draw(clr) 
+            {
+                var canvas = document.getElementById('myCanvas');
+                var ctx = canvas.getContext('2d');
+                ctx.beginPath();
+                ctx.fillstyle=clr;
+                ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+                ctx.fill();
+            }
+            draw("yellow");
+}
         </script> 
     </body>
 </html>

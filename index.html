@@ -10,8 +10,8 @@
         <h1>
             KESHAV
         </h1>
-            <canvas id="myCanvas" width="150" height="150">
-Your browser does not support the HTML5 canvas tag.
+            <canvas onmouseover="glow(this)" onmouseout="normal(this)" id="myCanvas" width="150" height="150">
+                Your browser does not support the HTML5 canvas tag.
             </canvas>
             <script>
                 var c = document.getElementByTagName("canvas");
@@ -19,6 +19,14 @@ Your browser does not support the HTML5 canvas tag.
                 ctx.beginPath();
                 ctx.arc(100, 75, 50, 0, 2 * Math.PI);
                 ctx.stroke();
+                function glow(x)
+                {
+                    x.style.color="#4bfeff";
+                }
+                function normal(x)
+                {
+                    x.style.color="#38b9e8";
+                };
             </script> 
     </body>
 </html>

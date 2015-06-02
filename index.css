@@ -9,6 +9,11 @@ body
     background-color: #60b6e8;
 }
 
+.content
+{
+    color: white;
+}
+
 .box
 {
     vertical-align: middle;

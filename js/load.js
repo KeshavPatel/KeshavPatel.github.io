@@ -12,10 +12,11 @@ function loadMe(words, color, guts)
     $("h1").fadeIn("1s");
     $("body").animate({backgroundColor: color}, "2s");
     $("#back").fadeIn("2s");
+    $("#content").load(guts);
     setTimeout(function()
     {
-        $("#content").load(guts);
-    }, 2000);
+        $("#content").fadeIn("1s");
+    }, 1000);
     return false;
 }
 
@@ -26,6 +27,7 @@ function index()
     $("#another").fadeIn("2s");
     $("#yup").fadeIn("2s");
     $("#back").fadeOut("2s");
+    $("#content").fadeOut("2s");
     $("h1").fadeOut(".1s");
     setTimeout(function()
     {
@@ -40,6 +42,7 @@ function index()
 $(document).ready(function()
 {
     $("#back").fadeOut("1ms");
+    $("#content").fadeOut("1ms");
     $("#me").click(function()
     {
         loadMe("About Me", "#69ffbb");

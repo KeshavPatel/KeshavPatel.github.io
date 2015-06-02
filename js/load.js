@@ -15,7 +15,7 @@ function loadMe(words, color, guts)
     setTimeout(function()
     {
         $("#content").load(guts);
-    }, 600);
+    }, 2000);
     return false;
 }
 

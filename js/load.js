@@ -1,4 +1,4 @@
-function loadMe(words, color)
+function loadMe(words, color, guts)
 {
     $("#me").fadeOut("2s");
     $("#resume").fadeOut("2s");
@@ -11,12 +11,31 @@ function loadMe(words, color)
     }, 500);
     $("h1").fadeIn("1s");
     $("body").animate({backgroundColor: color}, "2s");
+    $("#back").fadeIn("2s");
+    $("#content").load(guts);
     return false;
 }
 
+function index()
+{
+    $("#me").fadeIn("2s");
+    $("#resume").fadeIn("2s");
+    $("#another").fadeIn("2s");
+    $("#yup").fadeIn("2s");
+    $("#back").fadeOut("2s");
+    $("h1").fadeOut(".1s");
+    setTimeout(function()
+    {
+        $("h1").text("KESHAV");
+    }, 500);
+    $("h1").fadeIn("1s");
+    $("body").animate({backgroundColor: "#60b6e8"}, "2s");
+    return false;
+}
 
 $(document).ready(function()
 {
+    $("#back").fadeOut("1ms");
     $("#me").click(function()
     {
         loadMe("About Me", "#69ffbb");
@@ -27,10 +46,14 @@ $(document).ready(function()
     });
     $("#another").click(function()
     {
-        loadMe("Another Page", "#69a0ff");
+        loadMe("Current Work", "#69a0ff");
     });
     $("#yup").click(function()
     {
-        loadMe("Yup", "#60e8d1");
+        loadMe("Contact", "#60e8d1", "../contact.html");
+    });
+    $("#back").click(function()
+    {
+        index();
     });
 });

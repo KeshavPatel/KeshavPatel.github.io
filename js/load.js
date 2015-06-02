@@ -30,6 +30,7 @@ function index()
     }, 500);
     $("h1").fadeIn("1s");
     $("body").animate({backgroundColor: "#60b6e8"}, "2s");
+    $("#content").empty();
     return false;
 }
 

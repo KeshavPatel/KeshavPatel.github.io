@@ -24,7 +24,8 @@ body
 
 .box
 {
-    font-size: 100%;
+    vertical-align: middle;
+    font-size: 50px;
     color: white;
     text-align: center;
     width: 30vw;

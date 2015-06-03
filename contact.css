@@ -22,19 +22,23 @@
 /* unvisited link */
 a:link {
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 /* visited link */
 a:visited {
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 /* selected link */
 a:active {
     color: #FFFFFF;
+    text-decoration: none;
 }

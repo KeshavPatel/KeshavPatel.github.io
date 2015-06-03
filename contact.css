@@ -1,10 +1,11 @@
 .reach
 {
+    vertical-align: middle;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     width: 40vw;
-    height: 30vh;
+    height: 10vh;
     -webkit-transition: background-color .5s ease-out;
     -moz-transition: background-color .5s ease-out;
     -o-transition: background-color .5s ease-out;

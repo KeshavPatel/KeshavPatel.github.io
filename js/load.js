@@ -11,11 +11,11 @@ function loadMe(words, color, guts)
     }, 500);
     $("h1").fadeIn("1s");
     $("body").animate({backgroundColor: color}, "2s");
-    $("#back").fadeIn("2s");
     $("#content").load(guts);
     setTimeout(function()
     {
         $("#content").fadeIn("1s");
+        $("#back").fadeIn("1s");
     }, 1000);
     return false;
 }

@@ -16,6 +16,7 @@ body
 
 .box
 {
+    vertical-align: middle;
     font-size: 50px;
     color: white;
     text-align: center;

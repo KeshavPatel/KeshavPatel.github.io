@@ -47,6 +47,7 @@ $(document).ready(function()
 {
     $("#back").fadeOut("1ms");
     $("#content").fadeOut("1ms");
+    window.resizeTo(300, 300);
     $("#me").click(function()
     {
         loadMe("About Me", "#69ffbb");

@@ -31,8 +31,11 @@ function index()
     $("h1").fadeOut(".1s");
     setTimeout(function()
     {
-        $("h1").text("KESHAV");
         window.scrollTo(0, 0);
+    }, 400);
+    setTimeout(function()
+    {
+        $("h1").text("KESHAV");
     }, 500);
     $("h1").fadeIn("1s");
     $("body").animate({backgroundColor: "#60b6e8"}, "2s");

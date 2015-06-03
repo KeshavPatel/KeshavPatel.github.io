@@ -24,11 +24,9 @@ body
 
 .box
 {
-    vertical-align: middle;
     font-size: 100%;
     color: white;
     text-align: center;
-    margin-top: 20px;
     width: 30vw;
     height: 20vh;
     border-style: solid;

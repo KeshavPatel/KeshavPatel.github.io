@@ -5,5 +5,15 @@
     text-align: center;
     width: 40vw;
     height: 30vh;
+    -webkit-transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    transition: background-color .5s ease-out;
     margin-left: 30vw;
+}
+
+.reach:hover
+{
+    background-color: #60b6e8;
+    cursor: pointer;
 }

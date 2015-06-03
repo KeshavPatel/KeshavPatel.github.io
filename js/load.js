@@ -32,6 +32,7 @@ function index()
     setTimeout(function()
     {
         $("h1").text("KESHAV");
+        window.scrollTo(0, 0);
     }, 500);
     $("h1").fadeIn("1s");
     $("body").animate({backgroundColor: "#60b6e8"}, "2s");

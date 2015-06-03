@@ -12,7 +12,7 @@ function loadMe(words, color, guts)
     $("h1").fadeIn("1s");
     $("body").animate({backgroundColor: color}, "2s");
     $("#content").load(guts);
-    $("#back").write("back");
+    $("#back").text("back");
     setTimeout(function()
     {
         $("#content").fadeIn("1s");
@@ -28,7 +28,7 @@ function index()
     $("#another").fadeIn("2s");
     $("#yup").fadeIn("2s");
     $("#back").fadeOut("2s");
-    $("#back").write("");
+    $("#back").text("");
     $("#content").fadeOut("2s");
     $("h1").fadeOut(".1s");
     setTimeout(function()
